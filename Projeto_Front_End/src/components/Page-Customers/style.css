@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
+.container-search {
+    text-align: center;
+    margin-top: 4em;
+}
+
+.container-search input {
+    font-family: 'Ropa Sans', sans-serif;
+    width: 30em;
+    border: none;
+    border-bottom: 3px solid gray;
+    padding: 0.3em 2em;
+    font-size: 18px;
+}
+.container-search input:focus {
+    outline: none;
+    border-bottom: 3px solid blue;
+}
+
+.container-area-customers {
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 4em;
+    text-align: center;
+}
+
+.container-area-customers .painel-customer {
+    display: inline-block;
+    background: rgb(201, 201, 201);
+    padding: 2em 3em;
+    margin: 0 3em;
+    margin-top: 2em;
+    border-radius: 10px;
+    border: 5px solid rgb(201, 201, 201);
+    transition: all 0.2s;
+}
+.container-area-customers .painel-customer:hover {
+    border: 5px solid gray;
+    cursor: pointer;
+}
+
+.container-area-customers .painel-customer .container-apresentacao {
+    display: block;
+    text-align: center;
+}
+
+.container-area-customers .painel-customer .container-apresentacao .image-customer {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.container-area-customers .painel-customer .container-apresentacao .name-customer {
+    font-size: 20px;
+    font-family: 'Ropa Sans', sans-serif;
+    margin-top: 1em;
+    width: 12em;
+}
+
+.container-buttons {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2.5em;
+}
+
+.container-buttons .button-put input {
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    margin-top: 1em;
+    font-family: 'Iceland', cursive;
+    background: #FF0;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+.container-buttons .button-put input:hover {
+    background: rgb(148, 148, 0);
+    cursor: pointer;
+}
+
+.container-buttons .button-del input {
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    margin-top: 1em;
+    font-family: 'Iceland', cursive;
+    background: #F00;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+.container-buttons .button-del input:hover {
+    background: rgb(161, 0, 0);
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    .container-search input {
+        width: 80%;
+    }
+
+    .container-area-customers .painel-customer .container-apresentacao .name-customer {
+        font-size: 10px;
+    }
+
+    .container-area-customers .painel-customer {
+        display: inline-block;
+        background: rgb(201, 201, 201);
+        padding: 1em 1em;
+        margin: 1em 1em;
+        margin-top: 2em;
+        border-radius: 10px;
+        border: 5px solid rgb(201, 201, 201);
+        transition: all 0.2s;
+    }
+
+    .container-area-customers .painel-customer .container-apresentacao .image-customer {
+        width: 100px;
+        height: 100px;
+    }
+
+    .container-buttons {
+        margin-top: 1em;
+    }
+
+    .container-buttons .button-del input {
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+        margin-top: 1em;
+        font-family: 'Iceland', cursive;
+        background: #F00;
+        border: none;
+        border-radius: 10px;
+        transition: all 0.2s;
+    }
+
+    .container-buttons .button-put input {
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+        margin-top: 1em;
+        font-family: 'Iceland', cursive;
+        background: #FF0;
+        border: none;
+        border-radius: 10px;
+        transition: all 0.2s;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .container-area-customers .painel-customer {
+        display: inline-block;
+    }
+}

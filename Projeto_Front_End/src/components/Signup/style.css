@@ -1,0 +1,154 @@
+.container-signup {
+    background: rgb(51, 51, 51);
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-title-signup {
+    text-align: center;
+    padding-top: 3em;
+}
+
+.container-title-signup h1 {
+    font-family: 'Iceland', cursive;
+    font-size: 120px;
+    color: #FFF;
+    display: inline-block;
+}
+.container-title-signup h2 {
+    font-family: 'Iceland', cursive;
+    font-size: 40px;
+    color: rgb(63, 63, 255);
+    display: inline-block;
+}
+
+
+.container-signup .container-form-signup {
+    text-align: center;
+}
+
+.container-signup .container-form-signup .username {
+    font-family: 'Iceland', cursive;
+    font-size: 20px;
+    padding: 0.5em 2em;
+    border: none;
+    border-bottom: 2px solid #FFF;
+    background: transparent;
+    margin-top: 3em;
+    width: 20em;
+    color: #FFF;
+}
+
+.container-signup .container-form-signup .password {
+    font-family: 'Iceland', cursive;
+    font-size: 20px;
+    padding: 0.5em 2em;
+    border: none;
+    border-bottom: 2px solid #FFF;
+    background: transparent;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    width: 20em;
+    color: #FFF;
+}
+
+.container-signup .container-form-signup input:focus {
+    outline: none;
+    border-bottom: 2px solid blue;
+}
+
+.container-form-signup .button-signin {
+    font-family: 'Iceland', cursive;
+    font-size: 22px;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 10px solid rgb(63, 63, 255);
+    color: #FFF;
+    background: rgb(63, 63, 255);
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    width: 20em;
+    transition: all 0.2s;
+}
+
+.container-form-signup .button-signin:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    border-bottom: 10px solid #000;
+}
+
+.container-form-signup .button-signin {
+    text-decoration: none;
+    font-family: 'Iceland', cursive;
+    font-size: 22px;
+    padding: 1em 8.5em;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 10px solid rgb(63, 63, 255);
+    color: #FFF;
+    background: rgb(63, 63, 255);
+    width: 20em;
+    transition: all 0.2s;
+}
+
+.container-form-signup .button-signin:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    border-bottom: 10px solid #000;
+}
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+    .container-signup {
+        background: rgb(51, 51, 51);
+        width: 100%;
+        height: 100vh;
+    }
+
+    .container-title-signup {
+        text-align: center;
+        padding-top: 1em;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    
+
+    .container-title-signup h1 {
+        font-family: 'Iceland', cursive;
+        font-size: 80px;
+        color: #FFF;
+        display: inline-block;
+    }
+    .container-title-signup h2 {
+        font-family: 'Iceland', cursive;
+        font-size: 30px;
+        color: rgb(63, 63, 255);
+        display: inline-block;
+    }
+
+    .container-form-signup .button-signin {
+        font-size: 18px;
+        width: 15em;
+    }
+
+    .container-form-signup .button-signin {
+        font-size: 18px;
+        padding: 1em 6em;
+    }
+
+
+    .container-signup .container-form-signup .username {
+        width: 12em;
+        font-size: 18px;
+    }
+
+    .container-signup .container-form-signup .password {
+        width: 12em;
+        font-size: 18px;
+    }
+}

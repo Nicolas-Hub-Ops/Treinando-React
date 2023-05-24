@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
+.container-all-form {
+    display: block;
+    text-align: center;
+}
+
+.container-form {
+    display: inline-block;
+    width: 80%;
+    border: 3px solid gray;
+    border-radius: 5px;
+    margin-top: 6em;
+}
+
+.container-form .container-photo-form {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.container-photo-form input {
+    background: transparent;
+    border-radius: 5px;
+    font-family: 'Iceland', cursive;
+    padding: 2em;
+    font-size: 20px;
+    border: 1px solid black;
+    transition: all 0.2s;
+}
+.container-photo-form input:hover {
+    cursor: pointer;
+    background: rgb(235, 235, 235);
+}
+
+::-webkit-file-upload-button {
+    font-family: 'Iceland', cursive;  
+    background: rgb(199, 199, 199);
+    border: none;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+  }
+
+.container-form .container-name-form {
+    text-align: center;
+}
+
+.container-form .container-name-form input {
+    width: 30em;
+    padding: 0.3em 2em;
+    border: none;
+    font-family: 'Iceland', cursive;
+    font-size: 18px;
+    border-bottom: 3px solid black;
+    margin-top: 3em;
+}
+.container-form .container-name-form input:focus {
+    outline: none;
+    border-bottom: 3px solid blue;
+}
+
+
+.container-button-form {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.container-button-form button {
+    font-family: 'Iceland', cursive;
+    font-size: 20px;
+    padding: 1em 2em;
+    border: none;
+    background: green;
+    color: #FFF;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+.container-button-form button:hover {
+    background: darkgreen;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+    .container-form {
+        border: none;
+        background: rgb(187, 187, 187);
+        padding: 1em;
+    }
+
+    .container-photo-form input {
+        padding: 1em;
+        font-size: 10px;
+    }   
+    .container-form .container-name-form input {
+        background: transparent;
+        width: 15em;
+        font-size: 12px;
+    }
+}

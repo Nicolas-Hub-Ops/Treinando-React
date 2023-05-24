@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
+
+.container-title-page {
+    position: absolute;
+    left: 18%;
+    top: 1em;
+    width: 20em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    padding: 0.5em 3em 0.5em 1em;
+    border-bottom: 3px solid rgb(243, 243, 243);
+    box-shadow: 1px 1px 1em 5px gray;
+    border-radius: 20px;
+}
+
+/*-------------- MENU PC ------------*/
+
+.menu-pc {
+    display: inline-block;
+    position: fixed;
+    background-color: rgb(228, 228, 228);
+    width: 30vh;
+    height: 100vh;
+    box-shadow: 2px 10px 2em 0.5em gray;
+}
+
+.menu-pc .container-pc  {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.menu-pc .container-pc img {
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 100%;
+}
+
+.menu-pc .container-pc .perfil-pc .nome-pc {
+    font-family: 'Iceland', cursive;
+    font-size: 25px;
+    margin-top: 0.5em;
+}
+
+.menu-pc .container-pc .perfil-pc .email-pc {
+    font-family: 'Iceland', cursive;
+    font-size: 18px;
+}
+
+.menu-pc .container-pc a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-pc .container-pc .container-itens-pc {
+    font-family: 'Iceland', cursive;
+    font-size: 25px;
+    margin-top: 2em;
+    width: 100%;
+    padding: 1em 0;
+    transition: all 0.2s;
+}
+
+.menu-pc .container-pc .container-itens-pc:hover {
+    background: rgb(210, 210, 210);
+    cursor: pointer;
+}
+
+.container-itens-pc-actived {
+    font-family: 'Iceland', cursive;
+    font-size: 25px;
+    margin-top: 2em;
+    width: 100%;
+    padding: 1em 0;
+    background: gray;
+}
+.container-itens-pc-select:hover {
+    cursor: auto;
+    opacity: 1;
+}
+
+.menu-pc .container-pc .container-logout-pc {
+    font-family: 'Iceland', cursive;
+    font-size: 25px;
+    margin-top: 2em;
+    width: 100%;
+    padding: 1em 0;
+    background: #ff0000;
+    transition: all 0.2s;
+}
+
+.menu-pc .container-pc .container-logout-pc:hover {
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------ MENU MOVEL --------------*/
+
+
+
+
+
+
+
+.container-menu-movel {
+    display: inline-block;
+}
+
+.menu-movel-icone {
+    position: absolute;
+    display: none;
+    top: 1em;
+    width: 38px;
+    padding-left: 1em;
+    padding-top: 0.8em;
+}
+.menu-movel-icone:hover {
+    cursor: pointer;
+}
+
+.menu-movel-icone-disable {
+    display: none;
+}
+
+.menu-movel {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(32, 32, 32);
+    padding-bottom: 20em;
+    display: inline-block;
+}
+
+.menu-movel-disable {
+    display: none;
+}
+
+.menu-movel .container-movel {
+    text-align: center;
+}
+
+.menu-movel .container-movel a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.menu-movel .container-movel .perfil-movel {
+    font-family: 'Iceland', cursive;
+    color: #b4b4b4;
+}
+.menu-movel .container-movel .perfil-movel img {
+    border: 1px solid gray;
+    border-radius: 100%;
+}
+.menu-movel .container-movel .perfil-movel .nome-movel {
+    font-size: 25px;
+    margin-top: 1em;
+}
+.menu-movel .container-movel .container-itens-movel {
+    font-family: 'Iceland', cursive;
+    font-size: 20px;
+    display: inline-block;
+    color: #FFF;
+    margin-top: 1em;
+    padding: 1em 5em;
+    transition: all 0.2s;
+}
+.menu-movel .container-movel .container-itens-movel:hover {
+    background: rgb(210, 210, 210);
+    cursor: pointer;
+    color: rgb(32, 32, 32);
+}
+.menu-movel .container-movel .container-itens-movel-actived {
+    font-family: 'Iceland', cursive;
+    font-size: 20px;
+    background: rgb(210, 210, 210);
+    display: inline-block;
+    color: rgb(32, 32, 32);
+    margin-top: 1em;
+    width: 100%;
+    padding: 1em 0;
+    transition: all 0.2s;
+}
+
+.container-itens-movel-actived:hover {
+    cursor: auto;
+    opacity: 1;
+}
+
+.menu-movel .container-movel .container-logout-movel {
+    font-family: 'Iceland', cursive;
+    font-size: 25px;
+    display: inline-block;
+    padding: 1em 5em;
+    color: #FFF;
+    margin-top: 3em;
+    background: #FF0000;
+}
+.menu-movel .container-movel .container-logout-movel:hover {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 500px) {
+    .menu-movel .container-movel .container-itens-movel {
+        padding: 1em 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .menu-pc {
+        display: none;
+    }
+
+    .menu-movel-icone {
+        display: inline-block;
+    }
+    .menu-movel-icone {
+        padding-top: 0.5em;
+        padding-left: 2em;
+    }
+
+    .container-title-page {
+        font-size: 30px;
+        margin-top: 0.3em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    .menu-movel-icone {
+        padding-top: 0.1em;
+        padding-left: 2em;
+        width: 25px;
+    }
+    
+    .container-title-page {
+        font-size: 20px;
+        margin-top: 0.4em;
+    }
+}
+
+
+@media screen and (max-width: 1600px) {
+    
+    .container-title-page {
+        position: relative;
+        left: 0;
+        top: 0;
+        box-shadow: none;
+        text-align: center;
+        padding: 0.5em 0;
+        width: 100%;
+    }
+
+    .menu-pc {
+        display: none;
+    }
+
+    .menu-movel-icone {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .container-title-page {
+        position: relative;
+        left: 0;
+        top: 0;
+        box-shadow: none;
+        text-align: center;
+    }
+}
